@@ -38,3 +38,16 @@ function addOpt(a:number,b:number,c?:number):number{
 ```
 - if we don't explicitely declare a variable type, but you assign a value with the declaration , Typescript implicitely assumes the type from the value being assigned.
 - implicit typing will not work if variable assignment is in different lines.
+
+## any type
+- if we want to use any type for  variable in typescript then we can use 
+```
+var a: any;
+a = 10;
+a = "hhh"
+a = true;
+```
+- if we have to use two data types options (unions types)
+```
+var a :number | boolean; 
+```
