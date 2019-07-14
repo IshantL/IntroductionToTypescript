@@ -12,6 +12,11 @@ There are some problems with JavaScript
 - We can use compilation process i.e anylanguage(typescript) -> Compiler/transpiler -> JS file 
 - it is on development time
 
+## Typescript vs javascript
+- Typrscript -> JS + types (and some other stuffs)
+- we can use es6 in typescript , as es6 may be not use in all browsers but typescript convert from ts to js, we can use mordern syntax inside it.
+- makes building these complex apps more managable.
+
 ## Setup 
 
 To setup the typescript 
