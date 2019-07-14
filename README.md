@@ -25,3 +25,14 @@ There are some problems with JavaScript
 ## to run the ts file
  - $tsc "file name"
 
+## Notes
+- even if there is an error in typescript it gets convert to js file
+- the number of argumnets needs to match in function
+- we can give default value as argument in function by a = 0
+- we can have optional value as a? also the typr checking as a?:number
+- the return type can also be specified as
+```
+function addOpt(a:number,b:number,c?:number):number{
+    return a+b;
+}
+```

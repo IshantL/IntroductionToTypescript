@@ -13,3 +13,12 @@ myarray = [1, 2, 3];
 var arr;
 arr = [1, 'str', true];
 //a = "hello"(error)
+function add(a, b) {
+    return a + b;
+}
+console.log(add(4, 4));
+//optional arguments
+function addOpt(a, b, c) {
+    return a + b;
+}
+console.log(addOpt("dd", 4, 5));

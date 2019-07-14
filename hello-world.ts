@@ -18,7 +18,13 @@ var arr :[number,string,boolean];
 arr =[1,'str',true];
 //a = "hello"(error)
 
-function add(a,b){
+function add(a:number,b:number){
     return a+b;
 }
-console.log(add("dd",4));
+console.log(add(4,4));
+
+//optional arguments
+function addOpt(a:string,b,c?){
+    return a+b;
+}
+console.log(addOpt("dd",4,5));
