@@ -17,3 +17,8 @@ myarray =[1,2,3]
 var arr :[number,string,boolean];
 arr =[1,'str',true];
 //a = "hello"(error)
+
+function add(a,b){
+    return a+b;
+}
+console.log(add("dd",4));
