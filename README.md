@@ -18,6 +18,8 @@ There are some problems with JavaScript
 - makes building these complex apps more managable.
 
 ## Setup 
+- VS Code
+- Node js (to convert from ts to js and to run js)
+- npm install -g install typescript
 
-To setup the typescript 
 
