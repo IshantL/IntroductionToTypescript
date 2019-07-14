@@ -8,6 +8,9 @@ There are some problems with JavaScript
 
 ## How Typescript works
 
+- As the browser only understand the JS
+- We can use compilation process i.e anylanguage(typescript) -> Compiler/transpiler -> JS file 
+- it is on development time
 
 ## Setup 
 
