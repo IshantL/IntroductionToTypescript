@@ -22,4 +22,6 @@ There are some problems with JavaScript
 - Node js (to convert from ts to js and to run js)
 - npm install -g install typescript
 
+## to run the ts file
+ - $tsc "file name"
 
