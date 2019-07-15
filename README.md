@@ -62,3 +62,42 @@ var aPerson = new Person();
 aPerson.firstName = "ishant";
 console.log(aPerson);
 ```
+- Methods and constructors
+```
+class Person{
+firstName:string;
+lastName: string;
+
+constructor(){
+this.firstName = "";
+this.lastName= "";
+}
+
+getFullName(){
+ return this.firstName +''+this.lastName;
+}
+}
+var aPerson = new Person();
+aperson.firstName = "Ishant";
+aperson.lastName = "Lambhate";
+console.log(aperson.getFullName());
+
+```
+- parameterised constructor
+```
+class Person{
+firstName:string;
+lastName: string;
+
+constructor(firstName : string, lastName: string){
+this.firstName = firstName;
+this.lastName= lastName;
+}
+
+getFullName(){
+ return this.firstName +''+this.lastName;
+}
+}
+var aPerson = new Person("Ishant","Lambhate");
+console.log(aperson.getFullName());
+```
