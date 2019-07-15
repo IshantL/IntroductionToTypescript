@@ -101,3 +101,23 @@ getFullName(){
 var aPerson = new Person("Ishant","Lambhate");
 console.log(aperson.getFullName());
 ```
+- Inheritance
+
+```
+class Person{
+firstName: string;
+lastName: string;
+greet(){
+console.log("Hello There");
+}
+}
+class Programer extends Person{
+greet(){
+console.log("hello world");
+}
+}
+
+var aProgrammer = new Programer();
+aProgrammer.greet();
+
+```
