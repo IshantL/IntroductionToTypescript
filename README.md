@@ -195,3 +195,42 @@ getFullName: () => "Test"
 aPerson = someObj; //correct
 aPerson.foo //error
 ```
+- Member Visiblity
+No concept of pivate in js but in ts we have. If no access specifier it is treated as public.
+we can encapsulate the behavior.
+
+```
+class Person{
+private firstName: string;
+private lastName: string;
+greet(){
+console.log("Hello There");
+}
+getFirstName(){
+return this.firstName;
+}
+setFirstName(firstName: string){
+this.firstName = firstName;
+}
+getLastName(){
+return this.lastName;
+}
+setLastName(firstName: string){
+this.firstName = firstName;
+}
+getFullName(){
+ return this.firstName + this.lastName;
+}
+}
+class Programer extends Person{
+greet(){
+console.log("hello world");
+}
+greetLikeNormalPpl(){
+super.greet();
+}
+}
+
+var aProgrammer: Person = new Programer();
+aProgrammer.getFullName();
+```
