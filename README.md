@@ -51,3 +51,14 @@ a = true;
 ```
 var a :number | boolean; 
 ```
+## OOPS in Typescript
+```
+class Person{
+firstName: string;
+lastName: string;
+}
+
+var aPerson = new Person();
+aPerson.firstName = "ishant";
+console.log(aPerson);
+```
