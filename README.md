@@ -121,3 +121,26 @@ var aProgrammer = new Programer();
 aProgrammer.greet();
 
 ```
+- using super keyword
+
+```
+class Person{
+firstName: string;
+lastName: string;
+greet(){
+console.log("Hello There");
+}
+}
+class Programer extends Person{
+greet(){
+console.log("hello world");
+}
+greetLikeNormalPpl(){
+super.greet();
+}
+}
+
+var aProgrammer = new Programer();
+aProgrammer.greetLikeNormalPpl();
+
+```
