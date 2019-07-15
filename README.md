@@ -167,3 +167,31 @@ super.greet();
 var aProgrammer: Person = new Programer();
 aProgrammer.greet();
 ```
+- Interface
+```
+interface Person{
+firstName: string;
+lastName: string;
+getFullName():string;
+}
+
+class Foo implements Person {
+firstName: string;
+lastName: string;
+getFullName():string{
+ return this.firstName + this.lastName;
+}
+
+}
+
+let aPerson : person = new Foo();
+
+let someObj ={
+firstName:"Test",
+lastName:"Test",
+foo: 10,
+getFullName: () => "Test"
+}
+aPerson = someObj; //correct
+aPerson.foo //error
+```
