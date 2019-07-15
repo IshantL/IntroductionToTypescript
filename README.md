@@ -144,3 +144,26 @@ var aProgrammer = new Programer();
 aProgrammer.greetLikeNormalPpl();
 
 ```
+- Polymorphism
+
+
+```
+class Person{
+firstName: string;
+lastName: string;
+greet(){
+console.log("Hello There");
+}
+}
+class Programer extends Person{
+greet(){
+console.log("hello world");
+}
+greetLikeNormalPpl(){
+super.greet();
+}
+}
+
+var aProgrammer: Person = new Programer();
+aProgrammer.greet();
+```
