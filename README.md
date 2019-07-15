@@ -272,3 +272,16 @@ super.greet();
 var aProgrammer: Person = new Programer();
 aProgrammer.getFullName();
 ```
+- readonly modifier
+```
+class Person{
+readonly name ="Ishant"
+}
+
+// if we want to declare it in cnstructor
+
+readonly name;
+constructor(name:string){
+this.name=name;
+}
+```
