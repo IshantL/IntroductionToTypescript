@@ -234,3 +234,41 @@ super.greet();
 var aProgrammer: Person = new Programer();
 aProgrammer.getFullName();
 ```
+- using constructor Quick way to create private members and constructor.
+```
+class Person{
+
+constructor(private firstName:string, private lastName: string){
+
+}
+greet(){
+console.log("Hello There");
+}
+getFirstName(){
+return this.firstName;
+}
+setFirstName(firstName: string){
+this.firstName = firstName;
+}
+getLastName(){
+return this.lastName;
+}
+setLastName(firstName: string){
+this.firstName = firstName;
+}
+getFullName(){
+ return this.firstName + this.lastName;
+}
+}
+class Programer extends Person{
+greet(){
+console.log("hello world");
+}
+greetLikeNormalPpl(){
+super.greet();
+}
+}
+
+var aProgrammer: Person = new Programer();
+aProgrammer.getFullName();
+```
