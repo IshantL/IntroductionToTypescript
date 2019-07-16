@@ -347,3 +347,10 @@ return person;
 //}
 var foo = personEcho(admin);
 ```
+- Modules
+```
+//Person Class
+export class Person{}
+//otherclass which needs to import
+import {Person} from './Person'
+```
