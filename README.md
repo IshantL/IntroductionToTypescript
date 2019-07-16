@@ -372,3 +372,7 @@ tsc -help
  //to run
  tsc
 ```
+## creating an npm project
+- to create a npm project npm init
+- there main shows the starting point of the application
+- in script of package.json add start script "tsc && node filename"
