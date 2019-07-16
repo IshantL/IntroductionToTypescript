@@ -285,3 +285,19 @@ constructor(name:string){
 this.name=name;
 }
 ```
+- enum
+```
+enum DaysOfTheWeek {
+SUN,MON,TUE,WED,THU,FRI,SAT
+}
+let day: DaysOfTheWeek;
+day = DaysOfTheWeek.MON;
+if(day === DaysOfTheWeek.MON){
+ console.log("I have to go to work");
+}
+//if we want to give default values
+enum DaysOfTheWeek {
+SUN= 100,MON,TUE,WED,THU,FRI,SAT
+}
+//thenn MON is 101 and on.
+```
