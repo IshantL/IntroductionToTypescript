@@ -354,3 +354,13 @@ export class Person{}
 //otherclass which needs to import
 import {Person} from './Person'
 ```
+## Running Typescript
+- when compiling using tsc we get output file as same name but we can customise it s well using
+```
+tsc test.ts --out output-script.js
+```
+- if we want to compilation process continous.
+```
+tsc test.ts --out output-script.js --watch
+tsc -help
+```
