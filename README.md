@@ -301,3 +301,49 @@ SUN= 100,MON,TUE,WED,THU,FRI,SAT
 }
 //thenn MON is 101 and on.
 ```
+
+- Generics
+```
+function echo<T>(arg:T):T{
+ return arg;
+}
+var myStr = echo(1);
+
+//another example
+
+class Person{
+private firstName: string;
+private lastName: string;
+greet(){
+console.log("Hello There");
+}
+getFirstName(){
+return this.firstName;
+}
+setFirstName(firstName: string){
+this.firstName = firstName;
+}
+getLastName(){
+return this.lastName;
+}
+setLastName(firstName: string){
+this.firstName = firstName;
+}
+getFullName(){
+ return this.firstName + this.lastName;
+}
+}
+class Admin extends Person{}
+class Manager extends Person{}
+
+let admin  = new Admin('a','b');
+let manager = mew Manager('a','b');
+
+function personEcho<T>(person: T): T{
+return person;
+}
+// function personEcho<T extends Person>(person: T): T{
+//return person;
+//}
+var foo = personEcho(admin);
+```
