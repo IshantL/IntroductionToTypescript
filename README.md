@@ -364,3 +364,11 @@ tsc test.ts --out output-script.js
 tsc test.ts --out output-script.js --watch
 tsc -help
 ```
+## using tsconfig.json 
+- create the fie in root and contains all the commands here.
+- to create a tsconfig file
+```
+ tsc --init
+ //to run
+ tsc
+```
