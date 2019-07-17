@@ -367,6 +367,8 @@ tsc -help
 ## using tsconfig.json 
 - create the fie in root and contains all the commands here.
 - to create a tsconfig file
+- check the description of tsconfg for more details
+
 ```
  tsc --init
  //to run
@@ -376,4 +378,6 @@ tsc -help
 - to create a npm project npm init
 - there main shows the starting point of the application
 - in script of package.json add start script "tsc && node filename"
-Cont
+
+## Installing libraries and type definations
+
